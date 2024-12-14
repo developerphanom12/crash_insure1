@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b30ceacf8e01835f6442d03ecfba4eb3"
+application_url = "https://nec-dealing-entirely-lyric.trycloudflare.com"
+embedded = true
+name = "testmodule"
+handle = "testmodule"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders,write_products,write_orders,read_products"
+
+[auth]
+redirect_urls = [
+  "https://nec-dealing-entirely-lyric.trycloudflare.com/auth/callback",
+  "https://nec-dealing-entirely-lyric.trycloudflare.com/auth/shopify/callback",
+  "https://nec-dealing-entirely-lyric.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = true
+
+[build]
+dev_store_url = "papstreet.myshopify.com"
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
